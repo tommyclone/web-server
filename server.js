@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(middleware.requireAuthentication);
 app.use(middleware.logger);
 
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
     console.log('Express server started on port ' + port);
 });
